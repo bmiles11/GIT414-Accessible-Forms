@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Bryanna Miles">
+
+	<title>Form Activity Solution File</title>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also 
+				briefly discuss skip links for your website. Forms can be a source of frustration for users, 
+				whether they specifically need help with accessing your website or if they just prefer that 
+				your forms be easy to use and submit. Follow along as we code this in class, and please ask 
+				questions as they arise. Let's make a form!</p>
+			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
+				<label for="fullName">Full Name*</label>
+				<input class="required" type="text" id="name" value="name" required/>
+
+				<label for="email">Email*</label>
+				<input class="required" type="email" id="email" value="email" required/>
+
+				<label for="tel">Phone Number*</label>
+				<input class="required" type="tel" id="tel" value="phone" required/>
+
+				<fieldset>
+					<legend>Preferred Contact Method*</legend>
+					<label for="emailContact">Email</label>
+					<input class="required" type="radio" id="emailContact" name="preferredContact" value="Email"/>
+					<label for="phoneContact">Phone</label>
+					<input class="required" type="radio" id="phoneContact" name="preferredContact" value="Phone"/>
+				</fieldset>
+
+				<label for="state">State*</label>
+				<input class="required" id="states" name="states" type="text" list="states" required/>
+				<datalist id="states">
+					<select>
+						<option value="AL"></option>
+						<option value="AK"></option>
+						<option value="AZ"></option>
+						<option value="AR"></option>
+						<option value="CA"></option>
+						<option value="CO"></option>
+						<option value="CT"></option>
+						<option value="DE"></option>
+						<option value="FL"></option>
+						<option value="GA"></option>
+						<option value="HI"></option>
+						<option value="ID"></option>
+						<option value="IL"></option>
+						<option value="IN"></option>
+						<option value="IA"></option>
+						<option value="KS"></option>
+						<option value="KY"></option>
+						<option value="LA"></option>
+						<option value="ME"></option>
+						<option value="MD"></option>
+						<option value="MA"></option>
+						<option value="MI"></option>
+						<option value="MN"></option>
+						<option value="MS"></option>
+						<option value="MO"></option>
+						<option value="MT"></option>
+						<option value="NE"></option>
+						<option value="NV"></option>
+						<option value="NH"></option>
+						<option value="NJ"></option>
+						<option value="NM"></option>
+						<option value="NY"></option>
+						<option value="NC"></option>
+						<option value="ND"></option>
+						<option value="OH"></option>
+						<option value="OK"></option>
+						<option value="OR"></option>
+						<option value="PA"></option>
+						<option value="RI"></option>
+						<option value="SC"></option>
+						<option value="SD"></option>
+						<option value="TN"></option>
+						<option value="TX"></option>
+						<option value="UT"></option>
+						<option value="VT"></option>
+						<option value="VA"></option>
+						<option value="WA"></option>
+						<option value="WV"></option>
+						<option value="WI"></option>
+						<option value="WY"></option>
+					</select>
+				</datalist>
+
+				<label for="message">Leave a Message</label>
+				<textarea class="reqiured" id="message" name="message"></textarea>
+
+				<input type="submit" value="Submit"/>
+			</form>
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
